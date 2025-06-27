@@ -14,7 +14,7 @@ interface SajuLabel {
 }
 
 // 셀 타입 - 단일 아이템 또는 아이템 배열
-type SajuItems = SajuItem | SajuItem[];
+export type SajuItems = SajuItem | SajuItem[];
 
 // 행 타입
 export interface SajuRow {

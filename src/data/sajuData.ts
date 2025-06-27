@@ -1,15 +1,6 @@
 import { SajuRow } from "@/types/sajuType";
 
-export const sajuData: SajuRow[] = [
-  {
-    label: { main: "", sub: "" },
-    items: [
-      { main: "時", sub: "" },
-      { main: "日", sub: "" },
-      { main: "月", sub: "" },
-      { main: "年", sub: "" },
-    ],
-  },
+const sajuData: SajuRow[] = [
   {
     label: { main: "十星", sub: "십성" },
     items: [
@@ -114,3 +105,4 @@ export const sajuData: SajuRow[] = [
     ],
   },
 ];
+export default sajuData;
