@@ -10,7 +10,7 @@ export const initialState: UserState = {
 };
 
 export const sajuStore = (init: UserState = initialState) => {
-  return createStore<UserState>()((set) => ({
+  return createStore<UserState>()(() => ({
     ...init,
   }));
 };

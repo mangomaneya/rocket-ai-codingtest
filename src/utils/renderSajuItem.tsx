@@ -1,4 +1,4 @@
-import { SajuItems, SajuRow } from "@/types/sajuType";
+import { SajuItems } from "@/types/sajuType";
 
 const renderSajuItem = (items: SajuItems) => {
   if (Array.isArray(items)) {
