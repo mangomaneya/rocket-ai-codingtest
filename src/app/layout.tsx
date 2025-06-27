@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Zen_Antique_Soft } from "next/font/google";
 import "./globals.css";
+import { Providers } from "@/app/provider";
 
 const zen = Zen_Antique_Soft({
   weight: "400",
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={zen.variable}>
-      <body className={`${zen.variable} antialiased`}>{children}</body>
+      <body className={`${zen.variable} antialiased`}>
+        <Providers>{children}</Providers>
+        </body>
     </html>
   );
 }
