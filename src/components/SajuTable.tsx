@@ -1,12 +1,12 @@
-"use client"
+"use client";
 import { useSajuStore } from "@/app/provider";
 import sajuData from "@/data/sajuData";
 import renderSajuItem from "@/utils/renderSajuItem";
 
 const SajuTable = () => {
   const { userName, userBirth } = useSajuStore((state) => state);
-
   const sajuHeader = ["時", "日", "月", "年"];
+  
   return (
     <div className="relative m-4 text-center">
       {/* 유저 정보 */}
@@ -28,7 +28,10 @@ const SajuTable = () => {
 
         {/* 테이블 본문 */}
         {sajuData.map((row, rowIndex) => (
-          <div key={`${row.label}-${rowIndex}`} className="grid grid-cols-5 gap-0">
+          <div
+            key={`${row.label}-${rowIndex}`}
+            className="grid grid-cols-5 gap-0"
+          >
             {/* 행 레이블 */}
             <div className="flex flex-col items-center justify-center p-2 font-medium">
               <div>{row.label.main}</div>
@@ -39,7 +42,7 @@ const SajuTable = () => {
             {row.items.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex min-h-[60px] items-center justify-center"
+                className="flex min-h-[60px] flex-col items-center justify-center"
               >
                 {renderSajuItem(item)}
               </div>
