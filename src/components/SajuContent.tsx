@@ -15,7 +15,7 @@ const SajuContent = () => {
           layout="fill"
           objectFit="contain"
         />
-        <p className="absolute inset-0 z-[60] mx-auto box-border flex h-full max-w-[215px] items-center justify-center p-6 pt-8">
+        <p className="absolute inset-0 z-[60] mx-auto box-border flex h-full max-w-[215px] items-center justify-center p-6 pt-10">
           이제 본격적으로
           <br /> {userName}님의 사주팔자를 <br />
           분석해볼 차례네요.
